@@ -1,0 +1,132 @@
+body{
+    /* background:url("/images/bg1.jpg"); */
+    background-size: 100% 100%;
+    background-color: aquamarine;
+}
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.diya{
+    margin: 5rem auto;
+    height: 25rem;
+    width: 20rem;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#diya-img{
+    background:url("/images/diya1.jpg");
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    background-size: cover;
+    animation: rotation 20s infinite linear;
+}
+@keyframes rotation {
+    from{
+        transform: rotate(0deg);
+    }   
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+.diya #pg1-text{
+    font-size: 1.5rem;
+    animation: zoom 1s infinite linear;
+}
+@keyframes zoom {
+    0%{
+        transform: scale(1);
+        color: #000000;
+    }   
+    25%{
+        transform: scale(1.25);
+        color: #FB2576;
+    }
+    75%{
+        transform: scale(1.5);
+        color: #3F0071;
+    }   
+    100%{
+        transform: scale(1.25);
+        color: #150050;
+    }
+}
+.main{
+    display: none;
+    justify-content: space-around;
+    height: 40rem;
+    width: 25rem;
+}
+.card{
+    width: 20rem;
+    height: 40rem;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: aquamarine; */
+    text-align: center;
+}
+.card #btn-name{
+    margin-top: 2rem;
+    max-width: fit-content;
+    padding: 0rem 1rem;
+    height: 4rem;
+    border-radius: 1rem;
+    border: none;
+    /* background-color: beige; */
+    font-size: 1.5rem;
+    color: blue;
+    animation: zoom 1s infinite linear;
+}
+.card #greet-from{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color: yellow;
+}
+.greetings{
+    width: 100%;
+    /* background-color: red; */
+}
+.greetings img{
+    margin-top: 1rem;
+}
+.greet-img{
+    /* margin-top: 1rem; */
+}
+.register input{
+    height: 4rem;
+    font-size: 1.3rem;
+    text-align: center;
+    border: none;
+    border-radius: 1rem;
+}
+.submit{
+    margin-top: 1rem;
+    height: 4rem;
+    width: 45%;
+    font-size: 2rem;
+    border: none;
+    background-color: gray;
+    border-radius: 1rem;
+    color: aliceblue;
+}
+.share{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.link{
+    width: 40%;
+    margin-top: 1rem;
+}
